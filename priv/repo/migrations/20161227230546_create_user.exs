@@ -10,6 +10,6 @@ defmodule Rumbl.Repo.Migrations.CreateUser do
           timestamps
       end
 
-      create_unique_index(:users, [:username])
+      create unique_index(:users, [:username])
   end
 end
