@@ -10,6 +10,7 @@ defmodule Rumbl.UserController do
           |> put_flash(:error, "You must be logged in to access that page")
           |> redirect(to: page_path(conn, :index))
           |> halt()
+      end
   end
 
   def index(conn, _params) do
